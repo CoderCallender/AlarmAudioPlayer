@@ -21,9 +21,9 @@ def play_music(music_file):
     clock = pg.time.Clock()
     try:
         pg.mixer.music.load(music_file)
-        print("Music file {} loaded!".format(temple-bell-huge.mp3))
+        print("Music file {} loaded!".format(music_file))
     except pygame.error:
-        print("File {} not found! {}".format(temple-bell-huge.mp3, pg.get_error()))
+        print("File {} not found! {}".format(music_file, pg.get_error()))
         return
 
     pg.mixer.music.play()

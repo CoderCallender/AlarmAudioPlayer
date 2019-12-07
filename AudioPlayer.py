@@ -29,9 +29,9 @@ def play_music(music_file):
     pg.mixer.music.play()
     
     # If you want to fade in the audio...
-     for x in range(0,100):
-         pg.mixer.music.set_volume(float(x)/100.0)
-         time.sleep(.0075)
+    for x in range(0,100):
+        pg.mixer.music.set_volume(float(x)/100.0)
+        time.sleep(.0075)
     # # check if playback has finished
     while pg.mixer.music.get_busy():
         clock.tick(30) #this line limits the processing power. only update every 30 milli
